@@ -1,0 +1,39 @@
+
+public class BigBang {
+
+	public static void bigbang(){
+		
+		System.out.println("Soraya Santos");
+		
+		String line ="";
+		
+		for (int i=1;i<101;i++){
+			if (i%3==0){
+
+				//System.out.println("Big");
+				line+="Big,";
+
+			}
+			else if (i%5==0){
+				//System.out.println("Bang");
+				line+="Bang,";
+
+			}
+			else if (i%5==0&&i%3==0){
+				//System.out.println("BigBang");
+				line+="BigBang,";
+			}
+			else{
+				//System.out.println(i+" ");
+				line+=i+",";
+			}
+		}
+		System.out.println();
+		System.out.println(line);
+	}
+	public static void main(String[] args) {
+		bigbang();
+
+	}
+	
+}
